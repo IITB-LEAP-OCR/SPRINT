@@ -21,7 +21,7 @@ Table Structure Recognition (TSR) is vital for various downstream tasks like inf
 
 # Datasets
 
-The MUSTARD Dataset could be downloaded from this link - [dataset link](https://iitbacin-my.sharepoint.com/:f:/g/personal/22m2119_iitb_ac_in/EgAjCRHvsP1FuSWvTLnpshEBtEINXfwgxA2JgAbj_ZAxVw?e=lWHB1n)
+The MUSTARD Dataset could be downloaded from this link - [dataset link](https://iitbacin-my.sharepoint.com/:f:/g/personal/22m2119_iitb_ac_in/EpPkVTxrxg5LqqBu-hEhX4YBiA2IAhHqFJDQIL0DExhc4Q?e=Lzd1cz)
 
 ## MUSTARD Dataset
 
