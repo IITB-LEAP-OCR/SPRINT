@@ -19,7 +19,23 @@ Table Structure Recognition (TSR) is vital for various downstream tasks like inf
 
 # Getting Started
 
-## Installation and Implementation
+## Installation
+
+```
+1. virtualenv venv
+2. source venv/bin/activate
+3. pip install -r requirements.txt
+```
+
+## Inference Implementation
+
+To download the trained models - [link](https://github.com/IITB-LEAP-OCR/SPRINT/releases/tag/models)
+
+1. Inference could be done from src/infer.py file. Required parameters are present in src/config.py file for model loading and input data dir and parameters.
+
+2. ```python infer.py``` to run and execute the code to get predictions in OTSL format
+3. To Convert results from OTSL to HTML, run ```python src/otsl_to_html.py```
+4. TEDS evaluation has been setup in utils/teds_evaluation directory with instructions
 
 # Methodology
 
