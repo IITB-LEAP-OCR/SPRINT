@@ -1,5 +1,19 @@
-# SPRINT
-SPRINT: Script-agnostic Structure Recognition in Tables
+<div align="center">
+
+<h3 align="center">SPRINT: Script-agnostic Structure Recognition in Tables</h3>
+
+<p>  
+
+[![arXiv](https://img.shields.io/badge/arXiv-2503.11932-b31b1b.svg)](https://arxiv.org/abs/2503.11932) &nbsp;
+[![Dataset](https://img.shields.io/badge/%F0%9F%A4%97-Data-yellow)](https://huggingface.co/datasets/badrivishalk/MUSTARD) &nbsp;
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT) &nbsp;
+[![GitHub](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/IITB-LEAP-OCR/SPRINT) &nbsp;
+[![ICDAR 2024](https://img.shields.io/badge/Conference-ICDAR%202024-blue)](https://icdar2024.org/)
+
+</p>
+</div>
+
+
 
 ***Accepted at ICDAR 2024 Conference***
 
@@ -15,6 +29,25 @@ Table Structure Recognition (TSR) is vital for various downstream tasks like inf
 
 
 
+## Citation
+
+If you use this paper or the accompanying code/data in your research, please cite it as:
+
+```
+@InProceedings{10.1007/978-3-031-70549-6_21,
+author="Kudale, Dhruv and Kasuba, Badri Vishal and Subramanian, Venkatapathy and Chaudhuri, Parag and Ramakrishnan, Ganesh",
+editor="Barney Smith, Elisa H. and Liwicki, Marcus and Peng, Liangrui",
+title="SPRINT: Script-agnostic Structure Recognition in Tables",
+booktitle="Document Analysis and Recognition - ICDAR 2024",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="350--367",
+isbn="978-3-031-70549-6"
+url = "https://arxiv.org/abs/2503.11932"
+}
+
+```
 
 
 # Getting Started
@@ -46,6 +79,9 @@ To download the trained models - [link](https://github.com/IITB-LEAP-OCR/SPRINT/
 # Datasets
 
 The MUSTARD Dataset could be downloaded from this link - [dataset link](https://iitbacin-my.sharepoint.com/:f:/g/personal/22m2119_iitb_ac_in/EpPkVTxrxg5LqqBu-hEhX4YBiA2IAhHqFJDQIL0DExhc4Q?e=Lzd1cz)
+
+Alternatively, you could use the Huggingface datasets library to download the dataset - [link](https://huggingface.co/datasets/badrivishalk/MUSTARD)
+
 
 ## MUSTARD Dataset
 
@@ -94,9 +130,14 @@ MUSTARD dataset has been curated from various magazines and  contains both print
 
 # License
 
-The work has been licensed by MIT license
+The work has been licensed by [MIT] license
 
 # Acknowledgements
+
+We acknowledge the support of a grant from IRCC, IIT
+Bombay, and MEITY, Government of India, through the National Language
+Translation Mission-Bhashini project.
+
 
 # Authors Contact Information
 
