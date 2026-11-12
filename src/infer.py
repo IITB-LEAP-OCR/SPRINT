@@ -4,16 +4,10 @@ import torch
 import numpy as np
 from PIL import Image
 from torchvision import transforms
+from doctr.transforms import Resize
 from tqdm import tqdm
 from config import *
 
-
-# Get Tensor data from images
-test_transforms = transforms.Compose([
-    transforms.Resize((128, 128)),
-    transforms.Grayscale(num_output_channels=3),
-    transforms.ToTensor()
-])
 
 def load_images(files):
     images = []
@@ -29,7 +23,18 @@ device = torch.device("cuda:"+DEVICE if torch.cuda.is_available() else "cpu")
 # Load the model
 model = torch.load(MODEL_PATH, map_location=device)
 model.to(device)
-model.eval() 
+model.eval()
+
+
+# Get Tensor data from images
+# docTR's recognition preprocessing: keep the aspect ratio and pad (right / bottom) to 128 x 128,
+# then normalise with the mean / std stored in the model's own config
+test_transforms = transforms.Compose([
+    transforms.Grayscale(num_output_channels=3),
+    transforms.ToTensor(),
+    Resize((128, 128), preserve_aspect_ratio=True),
+    transforms.Normalize(model.cfg['mean'], model.cfg['std'])
+])
 
 
 results = {}
