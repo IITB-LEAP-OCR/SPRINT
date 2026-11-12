@@ -57,7 +57,7 @@ def get_conv_html_from_otsl(otsl_matrix, R, C):
                 rs, cs = get_cell_spans(otsl_matrix, i, j)
                 if rs and cs:
                     #There is rowspan and colspan
-                    html_string += f'<td rowpsan="{rs + 1}" colspan="{cs + 1}"></td>'
+                    html_string += f'<td rowspan="{cs + 1}" colspan="{rs + 1}"></td>'
                 elif rs and not cs:
                     # There is only row span
                     html_string += f'<td colspan="{rs + 1}"></td>'
